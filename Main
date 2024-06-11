@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Car> cars = new ArrayList<>();
+
+        cars.add(new Car("Toyota Camry", 2022));
+        cars.add(new Car("Honda Accord", 2021));
+        cars.add(new Car("Ford Mustang", 2020));
+        cars.add(new Car("Chevrolet Camaro", 2019));
+        cars.add(new Car("Tesla Model S", 2018));
+        cars.add(new Car("Nissan Altima", 2022));
+        cars.add(new Car("Hyundai Sonata", 2021));
+        cars.add(new Car("Kia Optima", 2020));
+        cars.add(new Car("Subaru WRX", 2019));
+        cars.add(new Car("Volkswagen Jetta", 2018));
+
+        Collections.sort(cars);
+
+        System.out.println("Sorted Cars by Year :");
+        for (Car car : cars) {
+            System.out.println(car);
+        }
+    }
+}
